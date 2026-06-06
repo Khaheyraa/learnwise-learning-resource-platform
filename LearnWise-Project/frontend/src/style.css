@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 18px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.user-name {
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #2563eb;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #e0ecff;
+}
+
+/* ================= HOME PAGE ================= */
+
+.home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home h1 {
+  font-size: 50px;
+  color: #2563eb;
+  margin-bottom: 18px;
+}
+
+.home p {
+  font-size: 20px;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.home button {
+  padding: 13px 26px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.home button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ================= LOGIN / REGISTER ================= */
+
+.form-container {
+  width: 390px;
+  margin: 80px auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+  text-align: center;
+}
+
+.form-container h1 {
+  color: #2563eb;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+  border-color: #2563eb;
+}
+
+.form-container button {
+  padding: 13px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #1d4ed8;
+}
+
+.message {
+  margin-top: 18px;
+  color: green;
+  font-weight: 700;
+}
+
+/* ================= RESOURCES PAGE ================= */
+
+.resources-page {
+  padding: 40px 55px;
+}
+
+.resource-hero {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.resource-hero h1 {
+  font-size: 42px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.resource-hero p {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.resource-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+/* ================= ADD RESOURCE FORM ================= */
+
+.resource-form-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.resource-form-card h2 {
+  color: #2563eb;
+  font-size: 30px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.resource-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resource-form-card input,
+.resource-form-card textarea,
+.resource-form-card select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.resource-form-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.resource-form-card input:focus,
+.resource-form-card textarea:focus,
+.resource-form-card select:focus {
+  border-color: #2563eb;
+}
+
+.resource-form-card button {
+  padding: 13px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resource-form-card button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ================= FILTER BOX ================= */
+
+.resources-content {
+  width: 100%;
+}
+
+.filter-box {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.filter-box input {
+  flex: 1;
+}
+
+.filter-box input,
+.filter-box select {
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.filter-box input:focus,
+.filter-box select:focus {
+  border-color: #2563eb;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+/* ================= RESOURCE CARDS ================= */
+
+.resource-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.resource-card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-top h3 {
+  color: #2563eb;
+  font-size: 21px;
+}
+
+.card-top span {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.resource-card p {
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.resource-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 9px 14px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.resource-card a:hover {
+  background-color: #1d4ed8;
+}
+
+.empty-text {
+  color: #64748b;
+  font-size: 18px;
+}
+
+/* ================= BOOKMARK BUTTON ================= */
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.card-actions button {
+  padding: 9px 14px;
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card-actions button:hover {
+  background-color: #d97706;
+}
+
+/* ================= REVIEW SECTION ================= */
+
+.review-section {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.review-section h4,
+.reviews-list h4 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.review-section select,
+.review-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.review-section textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.review-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.review-section button:hover {
+  background-color: #15803d;
+}
+
+.reviews-list {
+  margin-top: 18px;
+}
+
+.single-review {
+  background-color: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.single-review p {
+  margin-bottom: 5px;
+}
+
+/* ================= BOOKMARKS PAGE ================= */
+
+.bookmarks-page {
+  padding: 45px 55px;
+}
+
+.bookmarks-page h1 {
+  text-align: center;
+  color: #2563eb;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.bookmark-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+/* ================= DASHBOARD PAGE ================= */
+
+.dashboard-page {
+  padding: 45px 55px;
+}
+
+.dashboard-page h1 {
+  text-align: center;
+  color: #2563eb;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 22px;
+  margin-bottom: 45px;
+}
+
+.stat-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h2 {
+  color: #2563eb;
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  color: #475569;
+  font-weight: 700;
+}
+
+/* ================= RECOMMENDATIONS PAGE ================= */
+
+.recommendations-page {
+  padding: 45px 55px;
+}
+
+.recommendations-page h1 {
+  text-align: center;
+  color: #2563eb;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.recommendation-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.recommendation-note {
+  text-align: center;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 16px 25px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .resource-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-box {
+    flex-direction: column;
+  }
+
+  .resources-page,
+  .bookmarks-page,
+  .dashboard-page,
+  .recommendations-page {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+  }
+
+  .home h1,
+  .resource-hero h1,
+  .bookmarks-page h1,
+  .dashboard-page h1,
+  .recommendations-page h1 {
+    font-size: 34px;
+  }
+
+  .logo a {
+    font-size: 28px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+}
+/* ================= POLISHED HOME PAGE ================= */
+
+.home-page {
+  width: 100%;
+}
+
+.hero-section {
+  min-height: 430px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 25px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.hero-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #e0ecff;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  padding: 14px 26px;
+  border: none;
+  border-radius: 9px;
+  background-color: white;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  background-color: #dbeafe;
+}
+
+.hero-buttons .secondary-btn {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.hero-buttons .secondary-btn:hover {
+  background-color: #d97706;
+}
+
+.features-section {
+  padding: 60px 55px;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #2563eb;
+  margin-bottom: 35px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+  color: #2563eb;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.feature-card p {
+  color: #475569;
+  line-height: 1.6;
+}
